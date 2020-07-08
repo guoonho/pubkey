@@ -1,0 +1,10 @@
+---
+    kind: pipeline
+    type: docker
+    name: default
+    
+    steps:
+    - name: cargo build
+      image: rust
+      commands:
+      - cargo build
